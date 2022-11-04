@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+nav #navSom{
+    width: 40%;
+    padding: 2% 0;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+nav div a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0 7%;
+    box-sizing: border-box;
+    margin: auto;
+    
+
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: apparition 0.5s 1.5s ease-out forwards;
+    
+    transition: 0.5s;
+}
+nav #navSom a:hover{
+    transition: 0.5s;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+}
+nav #reseaux{
+    width: 12%;
+    padding: 2% 0;
+    float: right;
+    margin-right: 5%;
+    display: flex;
+    text-align: center;
+}
+nav #reseaux a{
+    padding: 0 3%;
+    transition: 0.2s;
+}
+nav #reseaux img{
+    width: 40px;
+    transition: 0.2s;
+}
+nav #reseaux img:hover{
+    transition: 0.2s;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    box-shadow: 0px 2px 25px 10px rgb(14, 11, 34);
+    width: 50px;
+}
+
+
+header{
+    background-image: url('img/background01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+header h1{
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.5em;
+    color: white;
+    width: 80%;
+    padding: 8% 0 2%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: apparition 0.5s 0.3s ease-out forwards;
+}
+header #infoHeader{
+    display: flex;
+    margin: 6% 6% 0 6%;
+}
+header #infoHeader img{
+    width: 450px;
+    border-radius: 100%;
+    padding: 0 10%;
+
+    opacity: 0;
+    transform: translateX(50px);
+    animation: apparition 0.5s 0.7s ease-out forwards;
+}
+h2{
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.3em;
+    color: white;
+    padding: 5% 0 2%;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: apparition 0.5s 0.5s ease-out forwards;
+}
+header #infoHeader hr{
+    font-family: 'Prompt', sans-serif;
+    border: white;
+    border-radius: 25px;
+    background-color: white;
+    height: 10px;
+    width: 150px;
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: apparition 0.5s 0.6s ease-out forwards;
+}
+header #infoHeader p{
+    color: white;
+    padding: 5% 0 2%;
+    width: 60%;
+    line-height: 150%;
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: apparition 0.5s 0.7s ease-out forwards;
+}
+header a #bas{
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 0.3%;
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: apparition 0.5s 01s ease-out forwards;
+}
+
+#skills{
+    background-color: rgb(14, 11, 34);
+    overflow: hidden;
+}
+#skills h2{
+    padding: 6%;
+}
+#skills p{
+    margin: 0 7%;
+    padding-left: 5%;
+}
+#skills em{
+    display: block;
+    margin: 0% 7%;
+    padding: 1% 5%;
+    color: rgb(151, 151, 151);
+}
+.reveal{
+    opacity: 0;
+    transform: translateY(-50px);
+}
+  
+  .reveal.active{
+    animation: apparition 0.5s 0.3s ease-out forwards;
+}
+
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
