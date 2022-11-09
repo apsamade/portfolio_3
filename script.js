@@ -1,41 +1,3 @@
-let mDivJs = document.getElementById('caseJS')
-let mDivCss = document.getElementById('caseCSS')
-let mDivHTML = document.getElementById('caseHTML')
-let mDivPhp = document.getElementById('casePhp')
-let mDivReact = document.getElementById('caseReact')
-
-window.addEventListener("scroll", reveal);
-document.getElementById('js').addEventListener('click', function(){
-  console.log('click')
-
-  if(mDivJs.style.display == 'none'){
-    mDivJs.style.display = 'block';
-  }else{
-    mDivJs.style.display = 'none';
-  }
-})
-
-document.getElementById('css').addEventListener('click', function(){
-  console.log('click')
-
-  let mDivJs = document.getElementById('caseCSS')
-  if(mDivJs.style.display == 'none'){
-    mDivJs.style.display = 'block';
-  }else{
-    mDivJs.style.display = 'none';
-  }
-})
-
-document.querySelector('.mCr').addEventListener('click', function(){
-  console.log('click')
-
-  if(mDivJs.style.display == 'block'){
-    mDivJs.style.display = 'none'
-  }
-})
-
-
-
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
@@ -52,4 +14,4 @@ function reveal() {
     }
   }
   
-  
+  window.addEventListener("scroll", reveal);
